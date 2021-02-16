@@ -1,0 +1,113 @@
+<!-- 
+  this template is not meant to be a valid HTML 5 layout, 
+  its only a super simple interface to test all containig
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <h1>Isaac Sauri Skill Test</h1>
+    <div class="card">
+      <h2>Leap Years:</h2>
+      <p>Click on the button below to print the next 20 leap years</p>
+      <div id="leapYearDiv"></div>
+      <button onclick="getLeapYears(20)">Button below</button>
+    </div>
+
+    <div class="card">
+      <h2> Common elements </h2>
+      <p> Given these arrays </p>
+      <p> a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] </p>
+      <p> b = [3,2,9,3,7,11,15,13,23,27,32,35,36,37] </p>
+      <p> c = [1,3,5,7,11,13,15,17,19,21,23,27,35,37] </p>
+      <p> d = [9,17,32,7,2,3,1,45,46,47,55,60,6,17] </p>
+      <p> click on button below to print common elements </p>
+        
+      <div id="commonElementsDiv"></div>
+      <button
+        onclick="getCommonElements(
+          [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15], 
+          [3,2,9,3,7,11,15,13,23,27,32,35,36,37],
+          [1,3,5,7,11,13,15,17,19,21,23,27,35,37],
+          [9,17,32,7,2,3,1,45,46,47,55,60,6,17],
+        )" 
+      >
+        Button below
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Anagram test</h2>
+      <p>Please write 2 words on the inputs below and press the button to check if its an anagram!</p>
+      <div id="anagramTestDiv"></div>
+      <input type="text" id="word1" ></input>
+      <input type="text" id="word2" ></input>
+      <button onclick="testAnagram()">The button</button>
+    </div>
+
+    <div class="card">
+      <h2>swap numbers</h2>
+      <p>this is a function that swaps two numbers without using temporary variables.</p>
+      <p>Please introduce a 2 digit number and click on Swap!.</p>
+      <input name="text" id="swap" maxlength="2"/>
+      <button onclick="swapValue()">Swap!</button>
+    </div>
+
+    <div class="card">
+      <h2>Sum without aritmethic operators</h2>
+      <p>The goal is to write a function able to sum 2 numbers without using arithmetic operators.</p>
+      <p>Please introduce a sum operation and click on evaluate"</p>
+      <p>Or you can use the default value</p>
+      <input name="text" id="evaluateMe" value="5+6"/>
+      <div id="noSumDiv"></div>
+      <button onclick="evaluateMe()">Evaluate!</button>
+    </div>
+
+    <div class="card">
+      <h2>Transpose</h2>
+      <p>Please input a matrix of 3 dimensions and click on transpose</p>
+      <div class="row">
+        <input id="cell11" value="5"/>
+        <input id="cell12" value="6"/>
+        <input id="cell13" value="8"/>
+      </div>
+      <div class="row">
+        <input id="cell21" value="7"/>
+        <input id="cell22" value="1"/>
+        <input id="cell23" value="9"/>
+      </div>
+      <div class="row">
+        <input id="cell31" value="3"/>
+        <input id="cell32" value="4"/>
+        <input id="cell33" value="2"/>
+      </div>
+
+      <div id="tra1"></div>
+      <div id="tra2"></div>
+      <div id="tra3"></div>
+
+
+      <div id="parenthesisDiv"></div>
+      <button onclick="transpose()">Transpose!</button>
+    </div>
+
+    <div class="card">
+      <h2></h2>
+      <p></p>
+      <div id="parenthesisDiv"></div>
+      <button onclick="getPossibleCombinations(3)">get!</button>
+    </div>
+
+    <script type="text/javascript" src="./scripts/leapYears.js"></script>
+    <script type="text/javascript" src="./scripts/commonElements.js"></script>
+    <script type="text/javascript" src="./scripts/anagramTest.js"></script>
+    <script type="text/javascript" src="./scripts/swapValues.js"></script>
+    <script type="text/javascript" src="./scripts/evaluate.js"></script>
+    <script type="text/javascript" src="./scripts/parenthesisSecuences.js"></script>
+    <script type="text/javascript" src="./scripts/transpose.js"></script>
+    
+  </body>
+</html> 
